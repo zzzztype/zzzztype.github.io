@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>zzzztype Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background-color: #2f2f2f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>zzzztype's Portfolio</h1>
+    <p>Artist & Creator - Furniture, AR, Film, Sculpture</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>안녕하세요! 저는 조각, 가구 디자인, AR, 영화 등 다양한 예술 매체를 탐구하는 창작자입니다.
+       예술성과 실용성을 연결하는 작업을 지향하며, 독창적인 시각으로 새로운 경험을 제안합니다.</p>
+  </section>
+
+  <section id="works">
+    <h2>My Works</h2>
+
+    <h3>Furniture</h3>
+    <div class="projects">
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Furniture 1"/><p>Wood Chair 2023</p></div>
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Furniture 2"/><p>Table Object</p></div>
+    </div>
+
+    <h3>AR</h3>
+    <div class="projects">
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="AR 1"/><p>AR Experience 01</p></div>
+    </div>
+
+    <h3>Film</h3>
+    <div class="projects">
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Film 1"/><p>Experimental Short Film</p></div>
+    </div>
+
+    <h3>Sculpture</h3>
+    <div class="projects">
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Sculpture 1"/><p>Clay Form 2024</p></div>
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Sculpture 2"/><p>Steel Structure</p></div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 zzzztype. All rights reserved.
+  </footer>
+</body>
+</html>
