@@ -1,100 +1,109 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>zzzztype Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>포트폴리오</title>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      color: #333;
+      display: flex;
+      height: 100vh;
+      font-family: "Pretendard", sans-serif;
+      background-color: #f9f9f9;
     }
-    header {
-      background-color: #2f2f2f;
-      color: white;
-      padding: 2rem;
-      text-align: center;
+    nav {
+      width: 220px;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0077cc;
+    }
+    main {
+      flex-grow: 1;
+      padding: 40px;
+      overflow-y: auto;
     }
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      margin-bottom: 60px;
     }
     h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
+    p {
+      line-height: 1.6;
     }
-    .card {
-      background: white;
-      padding: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      max-width: 100%;
-      border-radius: 6px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
+    .contact {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>zzzztype's Portfolio</h1>
-    <p>Artist & Creator - Furniture, AR, Film, Sculpture</p>
-  </header>
+  <nav>
+    <a href="#about">자기소개</a>
+    <a href="#experience">경험/활동</a>
+    <a href="#education">학력/전시</a>
+    <a href="#skills">스킬</a>
+    <a href="#contact">연락처</a>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>자기소개</h2>
+      <p>
+        빠르게 변화하는 현대 사회에서 변치 않는 가치는 ‘사람들과의 소통’이라고 생각합니다.<br/>
+        우리는 디지털과 인공지능이 일상에 스며든 시대를 살고 있습니다. 이러한 기술들이 대체할 수 없는
+        ‘인간만이 할 수 있는 일은 무엇일까’에 대한 고민 끝에 ‘직접 만들고, 사람들과 공유하며 그로 인해 소통하는 것’이 해답 중 하나라고 생각했습니다.<br/>
+        저에게 있어 예술과 디자인은 무언가를 만드는 것에 그치지 않고 더 나아가 사용자에게 감정을 불러일으키고 관계를 맺게 하는 매개체입니다.<br/>
+        기술이 넘쳐나는 현재이지만, 사람과 사람 사이의 소통은 변치 않습니다.<br/>
+        저는 끊임없이 손으로 만들고, 감각으로 고민하며, 마음으로 소통하는 일에 집중하고, 공간을 매개로 사람들과 진정으로 연결되는 경험을 만들어가고 싶습니다.
+      </p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>안녕하세요! 저는 조각, 가구 디자인, AR, 영화 등 다양한 예술 매체를 탐구하는 창작자입니다.
-       예술성과 실용성을 연결하는 작업을 지향하며, 독창적인 시각으로 새로운 경험을 제안합니다.</p>
-  </section>
+    <section id="experience">
+      <h2>경험/활동</h2>
+      <p>콜트레인 (2024.06 ~ 2025.06) — 가게 운영 보조</p>
+      <p>탬버린즈 (2024.03 ~ 2024.08) — 오브제 제작</p>
+      <p>WAGTI (2023.08) — 온라인 쇼핑몰 관리 보조: 포토샵, 상세페이지 제작, 재고 관리 등</p>
+      <p>0924 (2023.03 ~ 2024.03) — 전시 기획 및 설치</p>
+    </section>
 
-  <section id="works">
-    <h2>My Works</h2>
+    <section id="education">
+      <h2>학력 및 전시</h2>
+      <p>홍익대학교 조소과 (2021.12 ~ 2022.12) — &lt;Sculpture Open Studio&gt;展 출품</p>
+      <p>홍익대학교 조소과 (2021.01 ~ 2021.01) — &lt;2020 ONLINE EXHIBITION&gt;展 &lt;숨은 그림 찾기, 2021&gt; 참여</p>
+      <p>홍익대학교 조소과 학생회 (2019.03 ~ 2020.02) — 단체 디자인 및 영상/홍보물 제작</p>
+      <p>Imagine Film (2022.09 ~ 2023.12) — 미술감독 및 영화 제작</p>
+      <p>시오리 (2022.03 ~ 2023.03) — 전시 참가 및 인스타그램 필터 제작</p>
+      <p>다온 (2022.03 ~ 2022.10) — 건축 모형 제작</p>
+      <p>홍익대학교 목조과 (2021.12 ~ 2021.12) — &lt;Woodworking & Furniture Design Project Exhibition&gt;展 참여</p>
+    </section>
 
-    <h3>Furniture</h3>
-    <div class="projects">
-      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Furniture 1"/><p>Wood Chair 2023</p></div>
-      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Furniture 2"/><p>Table Object</p></div>
-    </div>
+    <section id="skills">
+      <h2>스킬</h2>
+      <p>디자인, 스토리텔링, 그래픽디자인, 가구디자인, VMD, Adobe Photoshop, Adobe Illustrator, Rhino, CAD</p>
+    </section>
 
-    <h3>AR</h3>
-    <div class="projects">
-      <div class="card"><img src="https://via.placeholder.com/300x200" alt="AR 1"/><p>AR Experience 01</p></div>
-    </div>
-
-    <h3>Film</h3>
-    <div class="projects">
-      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Film 1"/><p>Experimental Short Film</p></div>
-    </div>
-
-    <h3>Sculpture</h3>
-    <div class="projects">
-      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Sculpture 1"/><p>Clay Form 2024</p></div>
-      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Sculpture 2"/><p>Steel Structure</p></div>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 zzzztype. All rights reserved.
-  </footer>
+    <section id="contact">
+      <h2>연락처</h2>
+      <p class="contact">
+        Email: baikjy0902@naver.com<br/>
+        Instagram: @sedt_1ll__
+      </p>
+    </section>
+  </main>
 </body>
 </html>
